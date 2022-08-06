@@ -1,9 +1,9 @@
 body {
-    background-color: #051a27;
+    background-color: #212c61;
 }
 
 .pynk-nav {
-    background-color: #b8aa28;
+    background-color: #efcc43;
     height: 50px;
     padding: 10px;
 
@@ -15,4 +15,20 @@ body {
 
 .data-narrative-viewer {
     padding: 100px;
+}
+
+#btn-dirty {
+    background-color:  #b8aa28;
+}
+
+#btn-data {
+    background-color: #11030a;
+}
+
+#btn-pynk {
+    background-color: #d94591;
+}
+
+#btn-blue {
+    background-color: #6ca6e4;
 }
