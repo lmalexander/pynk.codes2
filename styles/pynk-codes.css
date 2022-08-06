@@ -4,7 +4,11 @@ body {
 
 .pynk-nav {
     background-color: #b8aa28;
-
+    height: 50px;
     padding: 10px;
 
+}
+
+.dirty-computer-viewer {
+    padding: 100px;
 }
