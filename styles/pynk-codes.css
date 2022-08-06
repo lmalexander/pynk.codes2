@@ -10,11 +10,15 @@ body {
 }
 
 .dirty-computer-viewer {
-    padding: 100px;
+    padding: 75px;
 }
 
 .data-narrative-viewer {
-    padding: 100px;
+    padding: 75px;
+}
+
+.btn-panel {
+    height: 75px;
 }
 
 #btn-dirty {
