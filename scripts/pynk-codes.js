@@ -1,7 +1,9 @@
+console.log("down in the valley where the girls get naked")
+
 /* >>> PYNK JSON
     This object stores all of the phrases used in the song "PYNK" to describe Pynk, organized by verse. */
     let pynk = {
-        "verseOne" : [
+        "monae" : [
             "the inside of your...baby", 
             "behind all of the doors...crazy",
             "the tongue that goes down...maybe",
@@ -9,9 +11,7 @@
             "when you're blushing inside...baby",
             "the truth you can't hide...maybe",
             "the folds of your brain...crazy",
-            "as we all go insane"
-            ],
-        "verseTwo" : [
+            "as we all go insane",
             "the lips around your...maybe",
             "the skin that's under...baby",
             "where it's deepest inside...crazy",
@@ -19,9 +19,7 @@
             "the secrets you hide...maybe",
             "the lid of your eye...baby",
             "where all of it starts...crazy",
-            "the holes of your heart"
-            ],
-        "outro" : [
+            "the holes of your heart",
             "the inside of your...baby (we're all just pynk)",
             "the walls and the doors...maybe (deep inside, we're all just pynk)",
             "your fingers in my...maybe",
@@ -30,6 +28,46 @@
             "the sun going down...maybe",
             "the holes in your heart...baby",
             "my favorite part"
+        ],
+        "valley" : [
+            "down in the valley",
+            "where the girls get naked",
+            "if you throwin' bands",
+            "then you know she gon shake it",
+            "one, two, break 'em",
+            "three, four, rake 'em",
+            "these niggas grind hard",
+            "but these bitches grind harder",
+            "climbing up the pole",
+            "just to get out the bottom",
+            "the crowd, below",
+            "stay ready for the show",
+            "the pimps, the dough",
+            "don't let it take your soul",
+            "we make fallin' out the sky look easy",
+            "look at my bitches",
+            "gangsta walkin' on the ceiling",
+            "green on the floor",
+            "money talk, can you hear me?",
+            "the world is addicting",
+            "but dreams is expensive",
+            "keep spending",
+            "work hard for the top",
+            "can't fall now",
+            "but whatever goes up",
+            "must fall down",
+            "what you do",
+            "when the power out",
+            "kids hungry",
+            "can't do nothing but scream shout",
+            "we all choose to live",
+            "but its different routes",
+            "take the shit with the shine",
+            "gotta make it count",
+            "when you live and die",
+            "by the paper route",
+            "spend a dime",
+            "just to make it out, yeah"
         ]           
     };
     
