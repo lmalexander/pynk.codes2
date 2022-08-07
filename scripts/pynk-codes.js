@@ -3,7 +3,6 @@ console.log("down in the valley where the girls get naked")
 /* >>> dirty computer viewer
     returns a random dirty computer headshot to the viewer
     next - clears data narrative viewer on click */
-
     function dcViewer() {
 
         // dirty computer viewer gifs array
@@ -14,10 +13,12 @@ console.log("down in the valley where the girls get naked")
             "<img src='./assets/pynk-headshots/pynk-codes_zen.gif' alt='Dirty Computer headshot - Zen'>",
             "<img src='./assets/pynk-headshots/pynk-codes_uncle-clifford.gif' alt='Dirty Computer headshot - Uncle Clifford'>",
             "<img src='./assets/pynk-headshots/pynk-codes_che.gif' alt='Dirty Computer headshot - Che'>",
-        ];
+            ];
 
-        // random index picker
+        // random array index picker
         index = Math.floor(Math.random() * dcViewSrc.length);
+
+        // check index was selected
         console.log(index);
 
         // location in html
@@ -25,23 +26,23 @@ console.log("down in the valley where the girls get naked")
         
         // write selected img tag to dcViewerSrc
         dcViewerSrc = dcViewSrc[index];
+
+        // check img tag was written to dcViewerSrc
         console.log(dcViewerSrc);
 
         // return dcViewerSrc to html
         document.getElementById("dcViewer").innerHTML = dcViewerSrc;
     };
 
-
-
     /* data button function
     - returns seven lines of pynk json object as unprocessed data to the dataViewer container.
-    - this function is connected to the first button on the page, #btn-data  */
-    
-    
+    - this function is connected to the first button on the page, #btn-data */
     function dataBtn() {
+
         // check on-click event + function is working
         console.log("data-Btn onclick worked!")
 
+        // rawData json object
         let rawData = {
             "1" : {
                 "songData" : {
@@ -125,7 +126,80 @@ console.log("down in the valley where the girls get naked")
                         ]
                     },
                 }
-            }
+            };
+
+    /* rawDataTable -- table that will be dynamically appended to page on button click */
+
+        // table title
+        let rawDataTableTitle = "The Data"
+
+        // assign table title id
+        // rawDataTableTitle.setAttribute("id","raw-data-table-title")
+
+        // return table title to page
+        document.getElementById("raw-data-table-title").append(rawDataTableTitle)
+
+        // table header array
+        let rawDataTableHeaders = [ "Phrase", "Song Title", "Artist", "Album", "Year"]
+
+        // check header array
+        console.log(rawDataTableHeaders)
+
+        // >>> 1. create table element
+        // create table element
+        let rawDataTable = document.createElement("table")
+
+        // assign table class
+        rawDataTable.className = "raw-data-table"
+
+        // >>> 2. create table header
+        // create table head element
+        let rawDataTableHead = document.createElement("thead")
+
+        // assign table head element class
+        rawDataTableHead.className = "raw-data-table-head"
+
+        // create table header row
+        let rawDataTableHeaderRow = document.createElement("tr")
+
+        // assign table header row class
+        rawDataTableHeaderRow.className = "raw-data-table-header-row"
+
+        // function to iterate through rawDataTableHeaders array and >
+        rawDataTableHeaders.forEach(header => {
+
+            //check headers in foreach
+            console.log(header)
+
+            // create header row cell
+            let dataHeader = document.createElement("th")
+
+            // write rawDataTableHeader string to header row cell
+            rawDataTableHeaders.innerText = header
+
+            // append header row cell to header row
+            rawDataTableHeaderRow.append(dataHeader)
+            
+            })
+
+        // append header row to table head element
+        rawDataTableHead.append(rawDataTableHeaderRow)
+
+        // append table head element to table element
+        rawDataTable.append(rawDataTableHead)
+
+        // >>> 3. create table body
+        // create table body element
+        let rawDataTableBody = document.createElement("tbody")
+        
+        // assign table body element class
+        rawDataTableBody.className = "raw-data-table-body"
+
+        // append table body element to table
+        rawDataTable.append(rawDataTableBody)
+
+        // return rawDataTable to page
+        document.getElementById("dataViewer").append(rawDataTable)
     };
 
     /* pynk button function
