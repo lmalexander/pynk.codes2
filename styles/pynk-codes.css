@@ -17,6 +17,18 @@ body {
     padding: 75px;
 }
 
+#raw-data-table-title {
+    color: #efcc43;
+}
+
+#dataViewerHeader {
+    color: #efcc43;
+}
+
+#dataViewerTable {
+    color: #efcc43;
+}
+
 .btn-panel {
     height: 75px;
 }
