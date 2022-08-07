@@ -46,7 +46,16 @@
                 <div class="col-6">
                 <!-- data narrative viewer -->
                     <div class="container data-narrative-viewer">
-                        <img src="./assets/pynk-codes_data-pholder.jpg" alt="jane 57821">
+                    <!-- <img src="./assets/pynk-codes_data-pholder.jpg" alt="jane 57821"> -->
+                    <!--dataViewer-->
+                        <div class="container" id="dataViewer">
+
+                        </div>
+                    <!--pynkViewer-->
+                        <div class="container" id="pynkViewer"></div>
+                    <!--blueViewer-->
+                        <div class="container" id="blueViewer"></div>
+
                     </div>
                 </div>
 
@@ -63,11 +72,11 @@
                       </div>
                 </div> <!--end button col-->
 
-                <!-- data narrative button col -->
+                <!-- data button col -->
                 <div class="col-3">
-                    <!-- data narrative btn-->
+                    <!-- data btn-->
                     <div class="d-grid">
-                        <button type="button" class="btn btn-panel" id="btn-data"> </button>
+                        <button type="button" class="btn btn-panel" id="btn-data" onclick="dataBtn()"> </button>
                       </div>
                 </div> <!--end button col-->
 
@@ -75,7 +84,7 @@
                 <div class="col-3">
                     <!-- pynk btn-->
                     <div class="d-grid">
-                        <button type="button" class="btn btn-panel" id="btn-pynk"> </button>
+                        <button type="button" class="btn btn-panel" id="btn-pynk" onclick="pynkBtn()"> </button>
                       </div>
                 </div> <!--end button col-->
 
@@ -83,7 +92,7 @@
                 <div class="col-3">
                     <!-- blue btn-->
                     <div class="d-grid">
-                        <button type="button" class="btn btn-panel" id="btn-blue"> </button>
+                        <button type="button" class="btn btn-panel" id="btn-blue" onclick="blueBtn()"> </button>
                       </div>
                 </div> <!--end button col-->
 

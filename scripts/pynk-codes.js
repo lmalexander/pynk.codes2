@@ -31,11 +31,10 @@ console.log("down in the valley where the girls get naked")
         document.getElementById("dcViewer").innerHTML = dcViewerSrc;
     };
 
-
 /* >>> data
     This object stores all of the phrases used in the song "PYNK" to describe Pynk, organized by verse. */
     let pynk = {
-        "monae" : [
+        "pynk" : [
             "the inside of your...baby", 
             "behind all of the doors...crazy",
             "the tongue that goes down...maybe",
@@ -101,4 +100,30 @@ console.log("down in the valley where the girls get naked")
             "spend a dime",
             "just to make it out, yeah"
         ]           
+    };
+
+    /* data button function
+    - returns seven lines of pynk json object as unprocessed data to the dataViewer container.
+    - this function is connected to the first button on the page, #btn-data  */
+    function dataBtn() {
+        // check on-click event + function is working
+        console.log("data-Btn onclick worked!")
+    };
+
+    /* pynk button function
+    - returns seven lines of pynk json object structured as a seven line poetic stanza to the pynkViewer container.
+    - this function is connected to the first button on the page, #btn-data  */
+    function pynkBtn() {
+        // check on-click event + function is working
+        console.log("pynk-Btn onclick worked!")
+
+    };
+
+    /* blue button function
+    - returns seven lines of pynk json object as a sentiment tagged dataset to the blueViewer container.
+    - this function is connected to the first button on the page, #btn-data  */
+    function blueBtn() {
+        // check on-click event + function is working
+        console.log("blue-Btn onclick worked!")
+
     };
