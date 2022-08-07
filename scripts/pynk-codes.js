@@ -1,5 +1,34 @@
 console.log("down in the valley where the girls get naked")
 
+/* >>> dirty computer viewer
+    returns a random dirty computer headshot to the viewer */
+
+    function dcViewer() {
+        let dcViewSrc = [];
+        index = 0;
+        dcViewSrc[0]="<img src='./assets/pynk-headshots/pynk-codes_jane-57821.gif' alt'Dirty Computer headshot - Jane 57821'>";
+        dcViewSrc[1]="<img src='./assets/pynk-headshots/pynk-codes_mercedes.gif' alt='Dirty Computer headshot - Mercedes'>";
+        dcViewSrc[2]="<img src='./assets/pynk-headshots/pynk-codes_miss-mississippi.gif' alt='Dirty Computer headshot - Miss Mississippi'>";
+        dcViewSrc[3]="<img src='./assets/pynk-headshots/pynk-codes_zen.gif' alt='Dirty Computer headshot - Zen'>";
+        dcViewSrc[4]="<img src='./assets/pynk-headshots/pynk-codes_uncle-clifford.gif' alt='Dirty Computer headshot - Uncle Clifford'>";
+        dcViewSrc[5]="<img src='./assets/pynk-headshots/pynk-codes_che.gif' alt='Dirty Computer headshot - Che'>";
+
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* >>> PYNK JSON
     This object stores all of the phrases used in the song "PYNK" to describe Pynk, organized by verse. */
     let pynk = {
