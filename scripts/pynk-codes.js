@@ -1,11 +1,10 @@
 console.log("down in the valley where the girls get naked")
 
 /* >>> dirty computer viewer
-    returns a random dirty computer headshot to the viewer */
+    returns a random dirty computer headshot to the viewer
+    next - clears data narrative viewer on click */
 
     function dcViewer() {
-        // location in html
-        let dcViewerSrc="";
 
         // array of dirty computer viewer gifs
         let dcViewSrc = [];
@@ -20,6 +19,9 @@ console.log("down in the valley where the girls get naked")
         // random index picker
         index = Math.floor(Math.random() * dcViewSrc.length);
         console.log(index);
+
+        // location in html
+        let dcViewerSrc="";
         
         // write selected img tag to dcViewerSrc
         dcViewerSrc = dcViewSrc[index];
@@ -30,12 +32,7 @@ console.log("down in the valley where the girls get naked")
     };
 
 
-
-
-
-
-
-/* >>> PYNK JSON
+/* >>> data
     This object stores all of the phrases used in the song "PYNK" to describe Pynk, organized by verse. */
     let pynk = {
         "monae" : [
