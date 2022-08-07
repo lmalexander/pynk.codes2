@@ -4,8 +4,12 @@ console.log("down in the valley where the girls get naked")
     returns a random dirty computer headshot to the viewer */
 
     function dcViewer() {
+        // location in html
+        let dcViewerSrc="";
+
+        // array of dirty computer viewer gifs
         let dcViewSrc = [];
-        index = 0;
+        let index = 0;
         dcViewSrc[0]="<img src='./assets/pynk-headshots/pynk-codes_jane-57821.gif' alt'Dirty Computer headshot - Jane 57821'>";
         dcViewSrc[1]="<img src='./assets/pynk-headshots/pynk-codes_mercedes.gif' alt='Dirty Computer headshot - Mercedes'>";
         dcViewSrc[2]="<img src='./assets/pynk-headshots/pynk-codes_miss-mississippi.gif' alt='Dirty Computer headshot - Miss Mississippi'>";
@@ -13,15 +17,17 @@ console.log("down in the valley where the girls get naked")
         dcViewSrc[4]="<img src='./assets/pynk-headshots/pynk-codes_uncle-clifford.gif' alt='Dirty Computer headshot - Uncle Clifford'>";
         dcViewSrc[5]="<img src='./assets/pynk-headshots/pynk-codes_che.gif' alt='Dirty Computer headshot - Che'>";
 
+        // random index picker
+        index = Math.floor(Math.random() * dcViewSrc.length);
+        console.log(index);
+        
+        // write selected img tag to dcViewerSrc
+        dcViewerSrc = dcViewSrc[index];
+        console.log(dcViewerSrc);
+
+        // return dcViewerSrc to html
+        document.getElementById("dcViewer").innerHTML = dcViewerSrc;
     };
-
-
-
-
-
-
-
-
 
 
 
@@ -99,42 +105,3 @@ console.log("down in the valley where the girls get naked")
             "just to make it out, yeah"
         ]           
     };
-    
-/* >>> Variables
-    Here, variables are created to store returns from the Pynk JSON object. */    
-    let txtOne = "";
-    let txtTwo = "";
-    let txtOut = "";
-
-/* >>> Interval
-    This function sets the Pynk function to run every 1200 milliseconds. */
-setInterval(pynkCodes, 2400);
-
-/* >>> PYNK function
-    This function will return a random phrase from the Pynk JSON object and store it to a variable. */
-    function pynkCodes() {
-// Verse 1 loop
-    for (let index = 0; index < pynk.verseOne.length; index++) {
-        txtOne = pynk.verseOne[Math.floor(Math.random() * 8)];
-        console.log(txtOne);
-    };
-// Verse 2 loop
-    for (let index = 0; index < pynk.verseTwo.length; index++) {
-            txtTwo = pynk.verseTwo[Math.floor(Math.random() * 8)];
-            console.log(txtTwo);
-        };
-// Outro loop
-    for (let index = 0; index < pynk.outro.length; index++) {
-            txtOut = pynk.outro[Math.floor(Math.random() * 8)];
-            console.log(txtOut);
-        };
-
-/* // Browser Returns
-    These functions will return the results stored in the variables above to the browser window. */
-// Verse 1 Return
-    document.getElementById("txtOne").innerHTML = txtOne;
-// Verse 2 Return
-    document.getElementById("txtTwo").innerHTML = txtTwo;
-// Outro Return
-    document.getElementById("txtOut").innerHTML = txtOut;
-}
