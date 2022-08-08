@@ -34,13 +34,13 @@ console.log("down in the valley where the girls get naked")
         document.getElementById("dcViewer").innerHTML = dcViewerSrc;
     };
 
-    /* data button function
+/* data button function
     - returns seven lines of pynk json object as unprocessed data to the dataViewer container.
     - this function is connected to the first button on the page, #btn-data */
     function dataBtn() {
 
         // check on-click event + function is working
-        console.log("data-Btn onclick worked!")
+        console.log("data-Btn onclick worked!");
 
         // rawData json object
         let rawData = {
@@ -131,75 +131,83 @@ console.log("down in the valley where the girls get naked")
     /* rawDataTable -- table that will be dynamically appended to page on button click */
 
         // table title
-        let rawDataTableTitle = "The Data"
-
-        // assign table title id
-        // rawDataTableTitle.setAttribute("id","raw-data-table-title")
+        let rawDataTableTitle = "The Data";
 
         // return table title to page
-        document.getElementById("raw-data-table-title").append(rawDataTableTitle)
+        document.getElementById("raw-data-table-title").innerText = rawDataTableTitle;
 
         // table header array
-        let rawDataTableHeaders = [ "Phrase", "Song Title", "Artist", "Album", "Year"]
+        let rawDataTableHeaders = [ "Phrase", "Song Title", "Artist", "Album", "Year"];
 
-        // check header array
-        console.log(rawDataTableHeaders)
+
 
         // >>> 1. create table element
         // create table element
-        let rawDataTable = document.createElement("table")
+        // let rawDataTable = document.createElement("table");
 
         // assign table class
-        rawDataTable.className = "raw-data-table"
+        // rawDataTable.className = "raw-data-table";
 
         // >>> 2. create table header
         // create table head element
-        let rawDataTableHead = document.createElement("thead")
+        let rawDataTableHead = "";
 
-        // assign table head element class
-        rawDataTableHead.className = "raw-data-table-head"
+        // assign table head element id
+        //rawDataTableHead.setAttribute = ("id","raw-data-table-head");
 
         // create table header row
-        let rawDataTableHeaderRow = document.createElement("tr")
+        let rawDataTableHeaderRow = document.createElement("tr");
 
         // assign table header row class
-        rawDataTableHeaderRow.className = "raw-data-table-header-row"
+        rawDataTableHeaderRow.className = "raw-data-table-header-row";
+
+        // check header array
+        console.log(rawDataTableHeaders);
 
         // function to iterate through rawDataTableHeaders array and >
         rawDataTableHeaders.forEach(header => {
 
             //check headers in foreach
-            console.log(header)
+            console.log(header);
 
             // create header row cell
-            let dataHeader = document.createElement("th")
+            let dataHeader = document.createElement("th");
 
-            // write rawDataTableHeader string to header row cell
-            rawDataTableHeaders.innerText = header
+            // write header string to dataHeader row cell
+            dataHeader.innerText = header;
+
+            // check dataHeader cell
+            console.log(dataHeader);
 
             // append header row cell to header row
-            rawDataTableHeaderRow.append(dataHeader)
+            rawDataTableHeaderRow.append(dataHeader);
             
-            })
+            });
+
+            console.log(rawDataTableHeaderRow);
 
         // append header row to table head element
-        rawDataTableHead.append(rawDataTableHeaderRow)
+        //rawDataTableHead.append(rawDataTableHeaderRow);
+        // rawDataTableHead.append = rawDataTableHeaderRow;
+
 
         // append table head element to table element
-        rawDataTable.append(rawDataTableHead)
+        document.getElementById("raw-data-table-head").append = rawDataTableHeaderRow;
+
+        // rawDataTable.append(rawDataTableHead);
 
         // >>> 3. create table body
         // create table body element
-        let rawDataTableBody = document.createElement("tbody")
+        //let rawDataTableBody = document.createElement("tbody");
         
         // assign table body element class
-        rawDataTableBody.className = "raw-data-table-body"
+        //rawDataTableBody.className = "raw-data-table-body";
 
         // append table body element to table
-        rawDataTable.append(rawDataTableBody)
+        //rawDataTable.append(rawDataTableBody);
 
         // return rawDataTable to page
-        document.getElementById("dataViewer").append(rawDataTable)
+        //document.getElementById("raw-data-table").append = rawDataTable;
     };
 
     /* pynk button function
