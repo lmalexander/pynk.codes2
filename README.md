@@ -1,4 +1,4 @@
-# pynk-codes-2
+# pynk.codes2
 
 ## App | Software | Site Description/Concept
 
