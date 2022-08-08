@@ -130,30 +130,21 @@ console.log("down in the valley where the girls get naked")
 
     /* rawDataTable -- table that will be dynamically appended to page on button click */
 
+        // >>>>> 1. TABLE BASICS
+
         // table title
         let rawDataTableTitle = "The Data";
 
         // return table title to page
         document.getElementById("raw-data-table-title").innerText = rawDataTableTitle;
 
+        // >>>>> 2. CREATE TABLE HEADER
+
         // table header array
         let rawDataTableHeaders = [ "Phrase", "Song Title", "Artist", "Album", "Year"];
 
-
-
-        // >>> 1. create table element
-        // create table element
-        // let rawDataTable = document.createElement("table");
-
-        // assign table class
-        // rawDataTable.className = "raw-data-table";
-
-        // >>> 2. create table header
         // create table head element
-        let rawDataTableHead = "";
-
-        // assign table head element id
-        //rawDataTableHead.setAttribute = ("id","raw-data-table-head");
+        let rawDataTableHead = document.createElement("thead");
 
         // create table header row
         let rawDataTableHeaderRow = document.createElement("tr");
@@ -161,10 +152,10 @@ console.log("down in the valley where the girls get naked")
         // assign table header row class
         rawDataTableHeaderRow.className = "raw-data-table-header-row";
 
-        // check header array
+        // check that header array is populated
         console.log(rawDataTableHeaders);
 
-        // function to iterate through rawDataTableHeaders array and >
+        // function to iterate through rawDataTableHeaders array and create a row of header cells>
         rawDataTableHeaders.forEach(header => {
 
             //check headers in foreach
@@ -184,19 +175,20 @@ console.log("down in the valley where the girls get naked")
             
             });
 
+            // check that header cells are populated with array data
             console.log(rawDataTableHeaderRow);
 
         // append header row to table head element
-        //rawDataTableHead.append(rawDataTableHeaderRow);
-        // rawDataTableHead.append = rawDataTableHeaderRow;
+        rawDataTableHead.append(rawDataTableHeaderRow);
 
+        // check that table head element is populated with table header row
+         console.log(rawDataTableHead)
 
         // append table head element to table element
-        document.getElementById("raw-data-table-head").append = rawDataTableHeaderRow;
-
-        // rawDataTable.append(rawDataTableHead);
-
-        // >>> 3. create table body
+        document.getElementById("raw-data-table-head").append(rawDataTableHead) 
+        
+        // >>>>> 3. CREATE TABLE BODY
+        
         // create table body element
         //let rawDataTableBody = document.createElement("tbody");
         
@@ -208,6 +200,9 @@ console.log("down in the valley where the girls get naked")
 
         // return rawDataTable to page
         //document.getElementById("raw-data-table").append = rawDataTable;
+
+
+
     };
 
     /* pynk button function
