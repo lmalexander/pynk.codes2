@@ -19,10 +19,12 @@ body {
 
 #raw-data-table-title {
     color: #efcc43;
+    font-size: 50px;
 }
 
-#dataViewerHeader {
+#raw-data-table-head {
     color: #efcc43;
+    font-size: 25px;
 }
 
 #dataViewerTable {
